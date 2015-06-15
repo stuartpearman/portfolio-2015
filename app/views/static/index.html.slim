@@ -1,32 +1,40 @@
-header.container
-  h1 Stuart Pearman
-  p.sub-heading Development and Design
+header
+  .container
+    h1 Stuart Pearman
+    p.sub-heading Development and Design
   / nav.nav
   /   ul
   /     li = link_to 'Web Work', '#web-work'
   /     li = link_to 'Hire Me', '#more'
-section#about.container
-  p Ever since I was a kid I've always loved building things. My craft has matured since then, but I still haven't lost the joy I get from thinking up new creations. I specialize in front-end web development, but I am always trying to expand my skillset with fresh projects in all imagineable categories.
-section#services.container
+section#about
+  .container
+    .col-xs-12
+      = image_tag 'tronstu.jpg'
+      h2 Hi, I'm Stuart.
+      p Ever since I was a kid I've always loved building things. My craft has matured since then, but I still haven't lost the joy I get from thinking up new creations. I specialize in front-end web development, but I am always trying to expand my skillset with fresh projects in all imagineable categories.
+      .contact
+        h3 Stuart Pearman
+        p
+          i.fa.fa-envelope
+          = link_to 'swpearman@gmail.com', 'mailto:swpearman@gmail.com'
+          br
+          i.fa.fa-phone
+          '(517) 449-1527
+section#services
+  .container
   / h2 Services
-  .col-xs-12.col-md-6.description
-    .col-xs-4.icon
-      = image_tag 'http://simpleicon.com/wp-content/uploads/iphone.png'
-    .col-xs-8
-      h3 Full Stack Development
-      p From ideation to completion, I enjoy very few things more than exploring challenging new web functionality.
-  .col-xs-12.col-md-6.description
-    .col-xs-4.icon
-      = image_tag 'http://simpleicon.com/wp-content/uploads/iphone.png'
-    .col-xs-8
-      h3 Visual Design
-      p From ideation to completion, I enjoy very few things more than exploring challenging new web functionality.
-  .col-xs-12.col-md-6.description
-    .col-xs-4.icon
-      = image_tag 'http://simpleicon.com/wp-content/uploads/iphone.png'
-    .col-xs-8
-      h3 Visual Design
-      p From ideation to completion, I enjoy very few things more than exploring challenging new web functionality.
+    .col-xs-12.col-md-6.description
+      .col-xs-4.icon
+        = image_tag 'http://simpleicon.com/wp-content/uploads/iphone.png'
+      .col-xs-8
+        h3 Full Stack Development
+        p From ideation to completion, I enjoy very few things more than exploring challenging new web functionality.
+    .col-xs-12.col-md-6.description
+      .col-xs-4.icon
+        = image_tag 'http://simpleicon.com/wp-content/uploads/iphone.png'
+      .col-xs-8
+        h3 Visual Design & Branding
+        p From ideation to completion, I enjoy very few things more than exploring challenging new web functionality.
 section#process.container
   / h2 My Process
   .col-xs-4
@@ -44,7 +52,6 @@ section#process.container
   .col-xs-4
     .graphic-block
       h3.col-xs-8 Production
-
       .description.col-xs-12
         p I start with a skeleton, going off of my outline. Once the foundation is complete, I start filling the page with visual fireworks.
   .col-xs-12
