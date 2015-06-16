@@ -1,6 +1,5 @@
 header
   .container
-    
     .col-xs-12.contact
       = image_tag 'tronstu.jpg'
       .card
@@ -27,41 +26,42 @@ section#services
   .container
     .col-xs-12.col-md-6.description
       .col-xs-4.icon
-        = image_tag 'http://simpleicon.com/wp-content/uploads/iphone.png'
+        i.fa.fa-diamond
       .col-xs-8
         h3 Full Stack Development
-        p From ideation to completion, I enjoy very few things more than exploring challenging new web functionality.
+        p From ideation to completion, I enjoy few things more than exploring fun and challenging new ways to shape the web.
     .col-xs-12.col-md-6.description
       .col-xs-4.icon
-        = image_tag 'http://simpleicon.com/wp-content/uploads/iphone.png'
+        i.fa.fa-eye
       .col-xs-8
         h3 Visual Design & Branding
-        p From ideation to completion, I enjoy very few things more than exploring challenging new web functionality.
+        p Professionally trained in design, I've been creating eye-catching visual designs across various media for 2 years.
 #process
   section.overlay
     .container
-      h2 My Process
-      .col-xs-4
+      h2.cutout My Process
+      .col-xs-12.col-sm-4
         .graphic-block
-          h3.col-xs-8 Paper
-          h3.col-xs-4 >
+          h3.col-xs-12 Paper
           .description.col-xs-12
-            p I put pen to paper and sketch for as long as it takes until I form a complete concept. I then outline the whole thing and move on to the next step.
-      .col-xs-4
+            p I put pen to paper and sketch for as long as it takes until I form a complete concept. Once the concept is in place, I outline every interaction needed so my work has direction.
+      .col-xs-12.col-sm-4
         .graphic-block
-          h3.col-xs-8 Prototype
-          h3.col-xs-4 >
+          h3.col-xs-12 Prototype
           .description.col-xs-12
-            p I like to bring something cleaner to the table when I present, both for my clients' sake, and to better see how my designs translate into the digital realm.
-      .col-xs-4
+            p I like to bring something visual and interactive to the table when I present, both for my clients' sake, and to better see how my designs translate onto their intended platform.
+      .col-xs-12.col-sm-4
         .graphic-block
-          h3.col-xs-8 Production
+          h3.col-xs-12 Production
           .description.col-xs-12
-            p I start with a skeleton, going off of my outline. Once the foundation is complete, I start filling the page with visual fireworks.
+            p I start with a skeleton of the site, going off of my outline. Once the foundation is complete, I start filling the page with visual fireworks.
       .col-xs-12
-        p.external-prompt To see an inside look at my process, visit my thought museum #{link_to 'Diggin through Stu', nil, class: 'btn btn-md lite'}
+        p.external-prompt.hidden To see an inside look at my process, visit my personal blog #{link_to 'Diggin through Stu', nil, class: 'btn btn-md lite'} I post artwork, animations, games, sketches, and more for your entertainment.
 section#web-work.container
-  / h2 Web Work
+  .col-xs-12
+    h2
+      i.fa.fa-desktop
+      'Web Work
   ul
     li
       .col-xs-12.col-md-4.pull-right
@@ -75,8 +75,8 @@ section#web-work.container
     li
       .col-xs-12.col-md-4.pull-right
         .bio
-          h3 IAMflix
-          p element84.com was a project built over a long period over time for my current employer, Element 84, Inc.
+          h3 Pureflix
+          p Lead designer for Pureflix. I helped translate the clients' vision to the web through various stages and ownership of the project.
           = link_to 'Visit site', 'http://pureflix.com', class: 'btn btn-md'
       .col-xs-12.col-md-8
         .image-container
@@ -96,5 +96,8 @@ footer#more
           br
           i.fa.fa-phone
           '(517) 449-1527
+          br
+          i.fa.fa-map-marker
+          'East Lansing, MI
         p.copyright
           small © Stuart Pearman, 2015

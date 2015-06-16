@@ -18,8 +18,8 @@ section {
 
 #about {
   border-top: 0;
-  background: rgba(255,255,255,0.6);
-  color: #000;
+  background: rgba(241, 248, 255, 0.8);
+  color: #333;
   margin-top: 20px;
   p {
     margin-top: 10px;
@@ -30,20 +30,20 @@ section {
 }
 
 .contact {
-  height: 240px;
+  height: 250px;
   // text-align: center;
   img {
     width: 220px;
     display: inline-block;
-    margin: 0 40px 120px 0;
+    margin: 0 40px 110px 0;
     border-radius: 140px;
-    border: 2px solid #FFF;
+    border: 2px solid #aaa;
     position: relative;
   }
   .card {
     color: #555;
     margin: 0;
-    padding: 20px 50px;
+    padding: 30px 50px;
     // border: 1px dashed #555;
     text-align: left;
     display: inline-block;
@@ -52,36 +52,63 @@ section {
 }
 
 #services {
+  background: $medium-dark-blue;
+  color: #fff;
   .icon {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
     img {
       width: 100px;
+    }
+    .fa {
+      font-size: 100px;
+      padding-right: 0;
+      &.fa-diamond {
+        color: #d55
+      }
+      &.fa-eye {
+        color: #6edeff;
+      }
     }
   }
 }
 
 #process {
-  background: url('http://hotwallpapershd.com/wp-content/uploads/2013/12/architecture-houses-sketch-13828.jpeg') fixed;
+  background: url('/assets/jungle.jpg') fixed;
+  background-size: 1440px;
+  background-position: center -300px;
   .overlay {
-    background: rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.1);
   }
   .btn {
-    margin-left: 10px;
+    margin: 0 10px;
   }
   .external-prompt {
     background: #333;
     color: #fff;
     display: inline-block;
     padding: 15px 20px;
-    border: 1px solid #ddd;
+    // border: 1px solid #ddd;
+    line-height: 2.5em;
   }
+}
+
+.cutout {
+  display: block;
+  width: 200px;
+  padding: 15px;
+  background: #fff;
+  margin: -31px 0 0 15px;
+  border: 1px solid #555;
+  border-top: 0;
+
 }
 
 .graphic-block {
   overflow: auto;
   margin: 30px 0;
   background: #FFF;
+  border: 1px solid #555;
   .description {
     margin-top: 10px;
   }
@@ -96,6 +123,9 @@ section {
     overflow: auto;
     .bio {
       margin-top: 30px;
+      .btn {
+        margin-top: 20px;
+      }
     }
   }
 }
@@ -120,38 +150,26 @@ section {
 }
 
 footer {
-  background: url('/assets/map.jpg') fixed 0 -100px;
+  background: url('/assets/map.jpg') fixed 0 -200px;
   color: #000;
   overflow: hidden;
   .overlay {
     padding: 30px 0 0 0;
-    background: rgba(255,255,255,0.65);
+    background: rgba(255,255,255,0.6);
   }
   .closing {
     color: #fff;
-    background: rgba(50,50,50,0.8);
+    background: rgba(70, 131, 178, 0.6);
     //border-top: 1px solid rgba(255,255,255,0.1);
     margin-top: 30px;
     text-align: center;
     padding: 30px 0;
-    height: 204px;
+    height: 234px;
     //overflow: hidden;
   }
-  // .circle {
-  //   color: #ccc;
-  //   height: 1000px;
-  //   width: 1000px;
-  //   padding: 160px 80px;
-  //   border-radius: 500px;
-  //   background: rgba(255,255,255, 0.1);
-  //   margin: -330px auto 0 auto;
-  //   border: 170px solid rgba(0,0,0,0.15);
-  //   h2 {
-  //     //color: #000;
-  //   }
     .copyright {
       margin-top: 35px;
-      color: #000;
+      color: #cfcfcf;
     }
   // }
 }
