@@ -1,5 +1,8 @@
 @import "fonts";
 
+$dark-blue: #223344;
+$medium-dark-blue: #223a55;
+$medium-blue: #336699;
 
 nav.nav {
   ul {
@@ -22,16 +25,37 @@ h3, h4, h5, h6 {
   font-weight: 800;
 }
 
-h1, h2 {
+h2 {
+  margin: 10px 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300px;
+
+}
+
+h1 {
   font-family: 'Quicksand', sans-serif;
   margin: 0; 
   font-weight: 300;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .btn {
   font-family: 'Quicksand', sans-serif;
   font-weight: 800;
-  background: #eee;
-  border: 1px solid #ddd;
+  background: $medium-dark-blue;
+  color: #fff;
+  &:hover {
+    color: #fff;
+    background: $medium-blue;
+  }
+  &.lite {
+    background: $medium-blue;
+    &:hover {
+      background: $medium-dark-blue;
+    }
+  }
+}
+
+.fa {
+  padding-right: 1em;
 }

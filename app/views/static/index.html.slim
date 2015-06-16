@@ -1,28 +1,30 @@
 header
   .container
-    h1 Stuart Pearman
-    p.sub-heading Development and Design
-  / nav.nav
-  /   ul
-  /     li = link_to 'Web Work', '#web-work'
-  /     li = link_to 'Hire Me', '#more'
-section#about
-  .container
-    .col-xs-12
+    
+    .col-xs-12.contact
       = image_tag 'tronstu.jpg'
-      h2 Hi, I'm Stuart.
-      p Ever since I was a kid I've always loved building things. My craft has matured since then, but I still haven't lost the joy I get from thinking up new creations. I specialize in front-end web development, but I am always trying to expand my skillset with fresh projects in all imagineable categories.
-      .contact
-        h3 Stuart Pearman
+      .card
+        h1 Stuart Pearman
+        p.sub-heading Development and Design
         p
           i.fa.fa-envelope
           = link_to 'swpearman@gmail.com', 'mailto:swpearman@gmail.com'
           br
           i.fa.fa-phone
           '(517) 449-1527
+  section#about
+    .container
+      .col-xs-12
+        .col-xs-10.col-xs-offset-0
+          h2 Hi, I'm Stuart.
+          p Ever since I was a kid I've always loved building things. My craft has matured since then, but I still haven't lost the joy I get from thinking up new creations. I specialize in front-end web development, but I am always trying to expand my skillset with fresh projects in all imagineable categories.
+  / nav.nav
+  /   ul
+  /     li = link_to 'Web Work', '#web-work'
+  /     li = link_to 'Hire Me', '#more'
+
 section#services
   .container
-  / h2 Services
     .col-xs-12.col-md-6.description
       .col-xs-4.icon
         = image_tag 'http://simpleicon.com/wp-content/uploads/iphone.png'
@@ -35,27 +37,29 @@ section#services
       .col-xs-8
         h3 Visual Design & Branding
         p From ideation to completion, I enjoy very few things more than exploring challenging new web functionality.
-section#process.container
-  / h2 My Process
-  .col-xs-4
-    .graphic-block
-      h3.col-xs-8 Paper
-      h3.col-xs-4 >
-      .description.col-xs-12
-        p I put pen to paper and sketch for as long as it takes until I form a complete concept. I then outline the whole thing and move on to the next step.
-  .col-xs-4
-    .graphic-block
-      h3.col-xs-8 Prototype
-      h3.col-xs-4 >
-      .description.col-xs-12
-        p I like to bring something cleaner to the table when I present, both for my clients' sake, and to better see how my designs translate into the digital realm.
-  .col-xs-4
-    .graphic-block
-      h3.col-xs-8 Production
-      .description.col-xs-12
-        p I start with a skeleton, going off of my outline. Once the foundation is complete, I start filling the page with visual fireworks.
-  .col-xs-12
-    p To see an inside look at my process, visit my thought museum #{link_to 'Diggin through Stu', nil, class: 'btn btn-md'}
+#process
+  section.overlay
+    .container
+      h2 My Process
+      .col-xs-4
+        .graphic-block
+          h3.col-xs-8 Paper
+          h3.col-xs-4 >
+          .description.col-xs-12
+            p I put pen to paper and sketch for as long as it takes until I form a complete concept. I then outline the whole thing and move on to the next step.
+      .col-xs-4
+        .graphic-block
+          h3.col-xs-8 Prototype
+          h3.col-xs-4 >
+          .description.col-xs-12
+            p I like to bring something cleaner to the table when I present, both for my clients' sake, and to better see how my designs translate into the digital realm.
+      .col-xs-4
+        .graphic-block
+          h3.col-xs-8 Production
+          .description.col-xs-12
+            p I start with a skeleton, going off of my outline. Once the foundation is complete, I start filling the page with visual fireworks.
+      .col-xs-12
+        p.external-prompt To see an inside look at my process, visit my thought museum #{link_to 'Diggin through Stu', nil, class: 'btn btn-md lite'}
 section#web-work.container
   / h2 Web Work
   ul
@@ -64,6 +68,7 @@ section#web-work.container
         .bio
           h3 Element 84
           p element84.com was a project built over a long period over time for my current employer, Element 84, Inc.
+          = link_to 'Visit site', 'http://element84.com', class: 'btn btn-md'
       .col-xs-12.col-md-8
         .image-container
           = image_tag 'element84-site.png'
@@ -72,9 +77,24 @@ section#web-work.container
         .bio
           h3 IAMflix
           p element84.com was a project built over a long period over time for my current employer, Element 84, Inc.
+          = link_to 'Visit site', 'http://pureflix.com', class: 'btn btn-md'
       .col-xs-12.col-md-8
         .image-container
           = image_tag 'iamflix.png'
 
-section#showcase.container
 footer#more
+  .overlay
+    .container
+      h2 Interested in working with me?
+      p I like to work with all types of people on a wide range of design projects. If you want to hire me, or if you would just like to start a conversation, I am always looking to expand my network.
+    .closing
+      .circle
+        h2 Stuart Pearman
+        p
+          i.fa.fa-envelope
+          'swpearman@gmail.com
+          br
+          i.fa.fa-phone
+          '(517) 449-1527
+        p.copyright
+          small © Stuart Pearman, 2015
